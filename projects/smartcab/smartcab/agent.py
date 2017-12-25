@@ -49,7 +49,7 @@ class LearningAgent(Agent):
             self.alpha = 0
                       
         else:
-            self.epsilon = self.epsilon-0.0015
+            self.epsilon = self.epsilon-0.0016
         return None
 
     def build_state(self):
@@ -85,10 +85,8 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Calculate the maximum Q-value of all actions for a given state
-        maxQ = 0
-        for maxaction_key in self.Q[state]:
-              if self.Q[state][maxaction_key] > maxQ :
-                 maxQ = self.Q[state][maxaction_key]
+       
+        maxQ = max(self.Q[state].values())
 
         return maxQ 
 
@@ -136,7 +134,7 @@ class LearningAgent(Agent):
         if not self.learning:
             action = random.choice(self.valid_actions)
         else:
-            if self.epsilon > 0.5:
+            if random.random()<self.epsilon:
                 action = random.choice(self.valid_actions)
                 
             else:
@@ -235,14 +233,14 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env,update_delay=0.0001,log_metrics=True,display=False,optimized=True)
+    sim = Simulator(env,update_delay=0.01,log_metrics=True,display=False,optimized=True)
     
     ##############
     # Run the simulator
     # Flags:
     #   tolerance  - epsilon tolerance before beginning testing, default is 0.05 
     #   n_test     - discrete number of testing trials to perform, default is 0
-    sim.run(n_test=10,tolerance=0.5)
+    sim.run(n_test=10,tolerance=0.015)
 
 
 if __name__ == '__main__':
