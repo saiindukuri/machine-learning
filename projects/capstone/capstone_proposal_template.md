@@ -1,15 +1,14 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
-Joe Udacity  
-December 31st, 2050
+Sai
+February 8, 2050
 
 ## Proposal
-_(approx. 2-3 pages)_
+
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. There is lot of buzz about cryptocurrency and everyday in the news we hear volatility in the prices of cryptocurrencies such as Bitcoin and Ethereum. My goal is to understand the volatility in the Bitcoin and Ethereum prices and predict the prices. I work in financial industry and I am interested in building a model that could predict the prices.
 
 ### Problem Statement
 _(approx. 1 paragraph)_
