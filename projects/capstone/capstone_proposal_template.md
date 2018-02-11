@@ -16,7 +16,7 @@ _(approx. 1 paragraph)_
 The goal of the project is to:
 Identify any trends within the price changes of Bitcoin and Ethereum
 Identify any correlation between the price changes of Bitcoin and Ethereum
-Build an algorithm to predict prices
+Build an algorithm to predict prices and make decisions wether to buy or sell.
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
@@ -25,6 +25,9 @@ This project uses data from https://coinmarketcap.com/ and https://www.kaggle.co
 These Datasets will be used to identify factors that most impact the prices and Identify any commonality of factors impacting both Bitcoin and Ethrium which later will help in building the algorithm to predict prices.
 
 ### Solution Statement
+
+The solution uses feature selection 
+
 _(approx. 1 paragraph)_
 
 In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
