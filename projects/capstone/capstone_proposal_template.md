@@ -14,14 +14,15 @@ Cryptocurrency is a digital currency in which encryption techniques are used to 
 _(approx. 1 paragraph)_
 
 The goal of the project is to:
-Identify any trends within the price changes of B
-
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
+Identify any trends within the price changes of Bitcoin and Ethereum
+Identify any correlation between the price changes of Bitcoin and Ethereum
+Build an algorithm to predict prices
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+This project uses data from https://coinmarketcap.com/ and https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The dataset(Bitcoin_dataset,Etherium_dataset) contains various factors impacting the prices.
+These Datasets will be used to identify factors that most impact the prices and Identify any commonality of factors impacting both Bitcoin and Ethrium which later will help in building the algorithm to predict prices.
 
 ### Solution Statement
 _(approx. 1 paragraph)_
