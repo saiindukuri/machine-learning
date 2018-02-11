@@ -13,6 +13,9 @@ Cryptocurrency is a digital currency in which encryption techniques are used to 
 ### Problem Statement
 _(approx. 1 paragraph)_
 
+The goal of the project is to:
+Identify any trends within the price changes of B
+
 In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
 
 ### Datasets and Inputs
