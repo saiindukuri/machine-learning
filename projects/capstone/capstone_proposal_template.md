@@ -8,25 +8,23 @@ February 8, 2050
 
 ### Domain Background
 
-Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. There is lot of buzz about cryptocurrency and everyday in the news we hear volatility in the prices of cryptocurrencies such as Bitcoin and Ethereum. My goal is to understand the volatility in the Bitcoin and Ethereum prices and predict the prices. I work in financial industry and I am interested in building a model that could predict the prices.
+Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. There is lot of buzz about cryptocurrency and everyday in the news we hear volatility in the prices of cryptocurrencies such as Bitcoin and Ethereum. 
 
 ### Problem Statement
 _(approx. 1 paragraph)_
 
-The goal of the project is to:
-Identify any trends within the price changes of Bitcoin and Ethereum
-Identify any correlation between the price changes of Bitcoin and Ethereum
-Build an algorithm to predict prices and make decisions wether to buy or sell.
+The extremely nonlinear nature of the stock market data makes it very difficult to design a system that can predict the future direction of the stock prices in Bitcoin/Etherium with sufficient accuracy. Goal of the project is to predict price movements(that's either up or down) of cryptocurrencies such as Bitcoin/Etherium 
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
 
-This project uses data from https://coinmarketcap.com/ and https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The dataset(Bitcoin_dataset,Etherium_dataset) contains various factors impacting the prices.
-These Datasets will be used to identify factors that most impact the prices and Identify any commonality of factors impacting both Bitcoin and Ethrium which later will help in building the algorithm to predict prices.
+This project uses data from https://coinmarketcap.com/ and https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The dataset(Bitcoin_prices,Etherium_prices) contains open, High, Low and Close prices and volume and marketcap.
+The data will be used to derive price movement(Up and down) which will be used as label to derive predictions.
 
 ### Solution Statement
 
-The solution uses feature selection 
+
+Accuracy of algorithm will be measured based on
 
 _(approx. 1 paragraph)_
 
