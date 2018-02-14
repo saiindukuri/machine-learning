@@ -13,7 +13,7 @@ Cryptocurrency is a digital currency in which encryption techniques are used to 
 ### Problem Statement
 _(approx. 1 paragraph)_
 
-The extremely nonlinear nature of the stock market data makes it very difficult to design a system that can predict the future direction of the stock prices in Bitcoin/Etherium with sufficient accuracy. Goal of the project is to predict price movements(that's either up or down) of cryptocurrencies such as Bitcoin/Etherium 
+The extremely nonlinear nature of the crypto market data makes it very difficult to design a system that can predict the future direction of the crypto prices in Bitcoin/Etherium with sufficient accuracy. Goal of the project is to predict price movements(that's either up or down) of cryptocurrencies such as Bitcoin/Etherium 
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
@@ -23,14 +23,14 @@ The data will be used to derive price movement(Up and down) which will be used a
 
 ### Solution Statement
 
+To be able to understand the patterns in price changes the solution will  derive technical trading indicator such as Relative strength index(RSI), Simple Moving average(SMA),support and resistance, Exponential moving average and Moving average convergence and divergance from the etherium/bitcoin prices dataset.Feature selection will be performed on derived technical trading features along with price, volume and marketcap information to select the features that impact the most.
 
-Accuracy of algorithm will be measured based on
+The solution tests the data on selected features on various machine learning models such as  Decision trees, SVM to pick a model with the highest accuracy.
 
-_(approx. 1 paragraph)_
-
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
 
 ### Benchmark Model
+
+In order to predict accuracy we will use the benchmark model(https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf) built by stanford university which has predicted bitcoin prices with accuracy 98.7%. Benchmark model used
 _(approximately 1-2 paragraphs)_
 
 In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
