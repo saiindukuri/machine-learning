@@ -30,13 +30,18 @@ The solution tests the data on selected features on various machine learning mod
 
 ### Benchmark Model
 
-In order to predict accuracy we will use the benchmark model(https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf) built by stanford university which has predicted bitcoin prices with accuracy 98.7%. Benchmark model used
-_(approximately 1-2 paragraphs)_
+In order to predict accuracy we will use the benchmark model(https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf) built by stanford university which has predicted bitcoin prices with accuracy 98.7%. Benchmark model.
 
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
+
+The solution will be evaluated based on following matrics.
+Sensitivity
+Specificity
+Precision
+Accuracy
+
 
 In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
 
