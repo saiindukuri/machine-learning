@@ -30,7 +30,6 @@ The solution tests the data on selected features on various machine learning mod
 
 ### Benchmark Model
 
-In order to predict accuracy we will use the benchmark model(https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf) built by stanford university which has predicted bitcoin prices with accuracy 98.7%. Benchmark model.
 
 
 ### Evaluation Metrics
