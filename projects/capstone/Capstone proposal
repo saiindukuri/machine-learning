@@ -30,8 +30,9 @@ The solution tests the data on selected features on various machine learning mod
 
 ### Benchmark Model
 
+The main goal of speculating a cryptocurrency price is to make profitable trades. To make profitable trades one doesn't need to know accurate value of the cryptocurrency price, but one mearely needs to predict wether prices rise or fall. In these lines we will train our models to classify subsequent day's closing price to be likely higher and lower than the last, based on past 10 days price data.
 
-
+I have considered 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
