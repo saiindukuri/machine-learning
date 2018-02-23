@@ -8,49 +8,50 @@ February 8, 2050
 
 ### Domain Background
 
-Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. There is lot of buzz about cryptocurrency and everyday in the news we hear volatility in the prices of cryptocurrencies such as Bitcoin and Ethereum. 
+Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. There is lot of buzz about cryptocurrency and everyday in the news we hear volatility in the prices of cryptocurrencies such as Bitcoin. 
 
 ### Problem Statement
 _(approx. 1 paragraph)_
 
-The extremely nonlinear nature of the crypto market data makes it very difficult to design a system that can predict the future direction of the crypto prices in Bitcoin/Etherium with sufficient accuracy. Goal of the project is to predict price movements(that's either up or down) of cryptocurrencies such as Bitcoin/Etherium 
+The extremely nonlinear nature of the crypto market data makes it very difficult to design a system that can predict the future direction of the crypto prices in Bitcoin with sufficient accuracy. Goal of the project is to predict price movements(that's either up or down) of cryptocurrencies such as Bitcoin.
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
 
-This project uses data from https://coinmarketcap.com/ and https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The dataset(Bitcoin_prices,Etherium_prices) contains open, High, Low and Close prices and volume and marketcap.
-The data will be used to derive price movement(Up and down) which will be used as label to derive predictions.
+Bitcoin is actual implementation of decentralization issued under the consent of participants not the central bank. Hence variants like purchasing power or interest rate parity does not impact Bitcoin. Bitcoin price is largly impacted by demand and supply.16.5 million Bitcoins are mined since it was created and the Bitcoins are capped at 21 millions part of the reason for scarcity and rush.
+
+Hence to predict Bitcoin price we need to predict Demand and Supply. Block chain is the technology used to create Bitcoin."Block Chain information" along with "Bitcoin" trading information includes features that can determine demand and supply and hence the price.
+
+Therefore, the project uses historic block chain information and Bitcoin trading information to predict future Bitcoin prices.
+
+This project uses data from https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The data consist of "Bitcoin_Dataset" and "Bitcoin_Prices" which consist of historic Block chain information and Bitcoin prices for  last 4 years.
 
 ### Solution Statement
 
-To be able to understand the patterns in price changes the solution will  derive technical trading indicator such as Relative strength index(RSI), Simple Moving average(SMA),support and resistance, Exponential moving average and Moving average convergence and divergance from the etherium/bitcoin prices dataset.Feature selection will be performed on derived technical trading features along with price, volume and marketcap information to select the features that impact the most.
+The main goal of speculating a cryptocurrency price is to make profitable trades. To make profitable trades one doesn't need to know accurate value of the cryptocurrency price, but one mearely needs to predict wether prices rise or fall. In these lines we will train our models to classify subsequent day's closing price to be likely higher and lower than the last, based on past 10 days price data.
 
-The solution tests the data on selected features on various machine learning models such as  Decision trees, SVM to pick a model with the highest accuracy.
-
+The solution tests the data on selected features using the models learnt in this course(Decision tree, SVM and CNN).
 
 ### Benchmark Model
 
-The main goal of speculating a cryptocurrency price is to make profitable trades. To make profitable trades one doesn't need to know accurate value of the cryptocurrency price, but one mearely needs to predict wether prices rise or fall. In these lines we will train our models to classify subsequent day's closing price to be likely higher and lower than the last, based on past 10 days price data.
+We will compare the results with the bitcoin model proposed by Issac Madan, Shaurya Saluja and Aojia Zhao in the below paper
 
-I have considered 
+https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf
+
+
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
-The solution will be evaluated based on following matrics.
+The solution will be evaluated based on following matrics used in the bench mark model
 Sensitivity
 Specificity
 Precision
 Accuracy
 
-
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
-
 ### Project Design
 _(approx. 1 page)_
 
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
 
------------
 
 **Before submitting your proposal, ask yourself. . .**
 
