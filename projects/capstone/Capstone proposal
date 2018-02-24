@@ -24,7 +24,7 @@ Hence to predict Bitcoin price we need to predict Demand and Supply. Block chain
 
 Therefore, the project uses historic block chain information and Bitcoin trading information to predict future Bitcoin prices.
 
-This project uses data from https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The data consist of "Bitcoin_Dataset" and "Bitcoin_Prices" which consist of historic Block chain information and Bitcoin prices for  last 4 years.
+This project uses data from https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory which is publicly available. The data consist of "Bitcoin_Dataset" which consist of historic Block chain information and Bitcoin prices for  last 4 years.
 
 ### Solution Statement
 
@@ -43,24 +43,35 @@ https://pdfs.semanticscholar.org/e065/3631b4a476abf5276a264f6bbff40b132061.pdf
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
-The solution will be evaluated based on following matrics used in the bench mark model
-Sensitivity
-Specificity
-Precision
-Accuracy
+The solution will be evaluated based on Accuracy. Accuracy will be computed based on the mechanism discussed in the Resampling and Model training section of the Project Design.
+
+Accuracy of the model is targetted for 50% to 80% which is much better than general guessing.
+
 
 ### Project Design
 _(approx. 1 page)_
 
 Data Exploration:
-Feature Relevance:
-Feature Scaling and Transformation:
-Feature Selection:
-Resampling:
-Training and validation
-Testing
-Optimizing
+Data Exploration will involve exploring the data through visualizations and code to understand how each feature is related to the others. We will observe a statistical description of the dataset, consider the relevance of each feature, and select a few sample data points from the dataset which we will track through the course of this project.
 
+Feature Relevance and selection:
+Feature relevance will involve identifying relevance of features and selecting the features by determining their correlation coefficient and building scatter matrix. 
+
+Feature Scaling:
+In feature scaling data is evaluated for normal distribution. In case the data is not normally distributed, most likely with financial data, non linear scaling is applied by applying natural logarithm.
+
+Outlier Detection:
+Detecting outliers is very important as the outliers can skew the results. Outlier steps are calculated based on 1.5 times the interquartile range. Any data point outside the outlier step will be identified as outlier.
+
+Feature Transformation:
+Feature transformation involves using Principle componant analysis(PCA) to draw conclusions about the underlying structure of the data. Dimentionality analysis is performed to identify least number of dimensions needed to explain most of the variance in the dataset. 
+
+Resampling and Model Training and Testing
+Cross Validation resampling is applied to the data by dividing original dataset in to K equal sized parts without the replacement. Machine learning models(Decision tree, SVM and NN) will be fit on K-1 Part and prediction errors are calculated for the leftout part. Total prediction accuracy is combined after the procedure is repeated for each part.
+Model is then tested on testing dataset.
+
+Optimization:
+Based on the accuracy on training and testing dataset models will be optimized using various optimizing techniques( until desired accuracy is aquired 
 
 **Before submitting your proposal, ask yourself. . .**
 
