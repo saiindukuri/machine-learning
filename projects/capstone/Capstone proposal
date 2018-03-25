@@ -34,14 +34,13 @@ The solution tests the data on selected features using the models learnt in this
 
 ### Benchmark Model
 
-We will start with building model that would get results better than random choice and will improve the model from there.
+We will start with building model that would get results better than Naive prediction and will improve the model from there.
 
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
-The solution will be evaluated based on Accuracy. Accuracy will be computed based on the mechanism discussed in the Resampling and Model training section of the Project Design.
-
+The solution will be evaluated based on Accuracy.
 
 
 ### Project Design
