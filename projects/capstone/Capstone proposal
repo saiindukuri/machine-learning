@@ -34,15 +34,17 @@ The solution tests the data on selected features using the models learnt in this
 
 ### Benchmark Model
 
-We will start with building model that would get results better than Naive prediction and will improve the model from there.
+We will start with building model that would get results better than Naive prediction.
 
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
-The solution will be evaluated based on Accuracy.
+The solution will be evaluated based on Accuracy, Precision and time taken to run. Accuracy will help us evaluate how often model makes right prediction and is derived by calculating number of correct predictions by total number of predictions  
+Precision tells us what proportion of predictions made toward rise in bitcoin prices resulted in rise. It is derived by calculating the ratio of true positives to all positives. 
+Precision is an important metric in Bitcoin prediction as knowing false positives is important in that false positives will result in losses in the trading. 
 
-
+Both Accuracy and prediction will be measured against the time to choose a mode that performs relatively faster at higher prediction and accuracy.
 ### Project Design
 _(approx. 1 page)_
 
