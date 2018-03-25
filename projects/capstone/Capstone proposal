@@ -30,11 +30,11 @@ This project uses data from https://www.kaggle.com/sudalairajkumar/cryptocurrenc
 
 The main goal of speculating a cryptocurrency price is to make profitable trades. To make profitable trades one doesn't need to know accurate value of the cryptocurrency price, but one mearely needs to predict wether prices rise or fall. In these lines we will train our models to classify subsequent day's closing price to be likely higher and lower than the last, based on past 10 days price data.
 
-The solution tests the data on selected features using the models learnt in this course(Decision tree, SVM and CNN) to pick a best model.
+The solution tests the data on selected features using the models learnt in this course(Linear regression, SVM and Random Forest) to pick a best model.
 
 ### Benchmark Model
 
-We will start with building model that would get results better than random choice and will improve the model from there
+We will start with building model that would get results better than random choice and will improve the model from there.
 
 
 ### Evaluation Metrics
@@ -53,7 +53,6 @@ Data Exploration will involve exploring the data through visualizations and code
 Feature Relevance and selection:
 Feature relevance will involve identifying relevance of features and selecting the features by determining their correlation coefficient and building scatter matrix. 
 
-
 Feature Scaling:
 In feature scaling data is evaluated for normal distribution. In case the data is not normally distributed, most likely with financial data, non linear scaling is applied by applying natural logarithm.
 
@@ -63,12 +62,18 @@ Detecting outliers is very important as the outliers can skew the results. Outli
 Feature Transformation:
 Feature transformation involves using Principle componant analysis(PCA) to draw conclusions about the underlying structure of the data. Dimentionality analysis is performed to identify least number of dimensions needed to explain most of the variance in the dataset. 
 
-Resampling and Model Training and Testing
+Naive predictor performance:
+We will build a naive predictor that will always predicts Bitcoin prices to go up and will derive accracty for this model. We will later evaluate the model we derive against Naive accuracy.
+
+Creating a training and predicting pipeline
 Cross Validation resampling is applied to the data by dividing original dataset in to K equal sized parts without the replacement. Machine learning models(Decision tree, SVM and NN) will be fit on K-1 Part and prediction errors are calculated for the leftout part. Total prediction accuracy is combined after the procedure is repeated for each part.
 Model is then tested on testing dataset.
 
+Model Evaluation:
+Model performance of (linear regression,SVM, Random forest) are evaluated agaist the time and accuracy.
+
 Optimization:
-Based on the accuracy on training and testing dataset models will be optimized using various optimizing techniques( until desired accuracy is aquired 
+Based on the accuracy on training and testing dataset and the time they took to run, models will be optimized using various optimizing techniques until desired accuracy is above naive prediction.
 
 **Before submitting your proposal, ask yourself. . .**
 
