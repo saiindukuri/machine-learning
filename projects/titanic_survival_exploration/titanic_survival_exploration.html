@@ -12690,7 +12690,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>Replace this text with your answer to the question above.</em></p>
+<p><strong>Answer</strong>: Predictions have an accuracy of 80.36%. I looked at the #Sibling and Spouse on board, # Parent and children on board and cabin number. The first two feature are more informative than the cabin number. Between Sibsp and Parch, I found Sibsp to be more informative - women who have more than 2 Sibsp are less likely to survive, and that is the condition I added ( if passenger['SibSp'] &gt; 2: predictions.append(0))</p>
 
 </div>
 </div>
